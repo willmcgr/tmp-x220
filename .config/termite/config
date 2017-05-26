@@ -1,0 +1,64 @@
+##**************************************
+##  file:     ~/.config/termite/config
+##  author:   @willmcgr - will@willmcgr.tech
+##  vim:fenc=utf-8:ft=cfg:
+##**************************************
+#+NOTE: clean this shit up ...
+
+[options]
+audible_bell = false
+visible_bell = false
+
+allow_bold = true
+
+font = Hermit 10
+
+cursor_blink = off
+cursor_shape = underline
+
+[colors]
+foreground = #aaaaaa
+background = #000000
+
+cursor = #26cece
+
+##Main colors
+color0 = #242424
+color1 = #8a2f58
+color2 = #287373
+color3 = #914e89
+color4 = #395573
+color5 = #5e468c
+color6 = #2b7694
+color7 = #899ca1
+
+color8 = #474747
+color9 = #cf4f88
+color10 = #53a6a6
+color11 = #bf85cc
+color12 = #4779b3
+color13 = #7f62b3
+color14 = #58aeb1
+color15 = #c0c0c0
+
+color254 = #000000
+
+##JS colors
+#color0 = #121212
+#color1 = #d64541
+#color2 = #1793d1
+#color3 = #f7ca18
+#color4 = #4183d7
+#color5 = #8e44ad
+#color6 = #6bb9f0
+#color7 = #bdc3c7
+
+#color8 = #2e3436
+#color9 = #e74c3c
+#color10 = #addef6
+#color11 = #f5d76e
+#color12 = #59abe3
+#color13 = #9b59b6
+#color14 = #89c4f4
+#color15 = #ececec
+

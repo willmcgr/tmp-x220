@@ -1,0 +1,114 @@
+##**************************************
+##  file:     ~/.zsh/.zsh_prompt_will
+##  author:   @willmcgr - will@willmcgr.tech
+##  vim:fenc=utf-8:ft=zsh
+##**************************************
+##
+
+##Define variables and arrays
+  ##Add files to fpath
+#fpath=( ~/.zsh_functions $fpath )
+#[[ -d $HOME/.zsh_functions/VCS_Info ]] &&
+#    fpath[1]=( ${fpath[1]} ~/.zsh_functions/**/*~*/(CVS)#(/) )
+#
+  ##load plugins
+autoload -U colors && colors
+autoload -U promptinit
+autoload -Uz vcs_info
+
+  ##define colors
+local off bbg
+local blk red grn ylw blu mag cyn wht
+local bblk bred bgrn bylw bblu bmag bcyn bwht
+off=$'%{\E[0m%}'
+bbg=$'%{\E[40m%}'
+blk=$'%{\E[1;30m%}'
+red=$'%{\E[1;31m%}'
+grn=$'%{\E[1;32m%}'
+ylw=$'%{\E[1;33m%}'
+blu=$'%{\E[1;34m%}'
+mag=$'%{\E[1;35m%}'
+cyn=$'%{\E[1;36m%}'
+wht=$'%{\E[1;37m%}'
+bblk=$'%{\E[0;30m%}'
+bred=$'%{\E[0;31m%}'
+bgrn=$'%{\E[0;32m%}'
+bylw=$'%{\E[0;33m%}'
+bblu=$'%{\E[0;34m%}'
+bmag=$'%{\E[0;35m%}'
+bcyn=$'%{\E[0;36m%}'
+bwht=$'%{\E[0;37m%}'
+
+  ##initialize arrays
+local -A pr_com
+local -a pr_llines pr_rlines
+
+  ##debugging
+#zstyle ':vcs_info:*+*:*'  debug true
+#zstyle ':pr_will:*'       debug true
+
+  ##aliases for quick switching
+alias pr_full="zstyle ':pr_will:' mode full"
+alias pr_compact="zstyle ':pr_will:' mode compact"
+alias pr_bare="zstyle ':pr_will:' mode bare"
+
+
+##Default mode
+if (( LINES < 5 ))
+then
+    zstyle ":pr_will:" mode bare
+else
+    zstyle ":pr_will:" mode full
+fi
+
+
+##Prompt definitions
+  ##prompt elements
+zstyle ':pr_will:*' hooks pwd usr vcs venv jobs prompt
+zstyle ':pr_will:*' pet "d"
+zstyle ':pr_will:*' pwd "%~"
+zstyle ':pr_will:*' usr "%n"
+zstyle ':pr_will:*' host "%m"
+  ##define vccs_info
+zstyle ':vcs_info:*'            enable              git hg bzr svn
+zstyle ':vcs_info:(hg*|git*):*' get-revision        true
+zstyle ':vcs_info:(hg*|git*):*' check-for-changes   true
+zstyle ':vcs_info:(hg*|git*)'   formats             "${blk}(${bylw}%s${blk}) ${bgrn}%12.12i${blk} %c%u %b%m"
+zstyle ':vcs_info:(hg*|git*)'   actionformats       "${blk}(${grn}%s${blk}|${wht}${blk}) %12.12i %c%u %b%m"
+zstyle ':vcs_info:hg*:*'        branchformats       "${grn}%b${off}"
+zstyle ':vcs_info:(hg*|git*):*' stagedstr           "${grn}S${blk}"
+zstyle ':vcs_info:(hg*|git*):*' unstagedstr         "${red}U${blk}"
+
+
+##**
+##  Prompt modes
+##**
+
+##  Show the full 2/3 line prompt
+  ## zstyle ':pr_will:' mode full
+  ## ... [dotfiles]:~/src/dotfiles ........... will@Centurion
+  ## ... (git) d2a3f82fe9c5 US? master -- origin/master +1/-2
+  ## -`\ 3 >>
+function +pr-mode-full(){
+  ##Define variables/arrays
+    local -a lines pline infoline debug
+    local i i_width i_pad filler
+    zstyle ':vcs_info:git*+set-message:*' hooks git-st git-up git-stash git-untracked
+    zstyle -t ":pr_will:*" debug && debug=1 || debug=0
+  ##Define infoline
+}
+
+
+
+
+
+
+
+
+##**
+##  VCS functions
+##**
+
+
+
+

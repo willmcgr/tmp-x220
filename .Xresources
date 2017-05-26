@@ -1,0 +1,214 @@
+!!**************************************
+!!  file:     ~/.Xresources
+!!  author:   @willmcgr - will@willmcgr.tech
+!!  vim:ft=xdefaults:
+!!**************************************
+!!
+
+!!**************************************
+!!  Misc options X11 programs
+!!**************************************
+
+!!  load i3wm resources
+!!ENV vars dont work here
+#include "/home/will/.i3/i3.Xresources"
+
+!!  load suckless terminal resources
+!#include "/home/will/.st/st.Xresources"
+
+!!  load color scheme
+!!Kept local
+!!Black
+*color0:  #242424
+*color8:  #474747
+!!Red
+*color1:  #8A2F58
+*color9:  #CF4F88
+!!Green
+*color2:  #287373
+*color10: #53A6A6
+!!Yellow
+*color3:  #914E89
+*color11: #BF85CC
+!!Blue
+*color4:  #395573
+*color12: #4779B3
+!!Magenta
+*color5:  #5E468C
+*color13: #7F62B3
+!!Cyan
+*color6:  #2B7694
+*color14: #58AEB1
+!!White
+*color7:  #899CA1
+*color15: #C0C0C0
+
+!!Kept external
+!#include "/home/.Xresources.d/nameless.Xresources"
+
+!!  tk Theme (not really used, by me, anymore but jic)
+*TkTheme: clam
+
+!!  xcursor
+Xcursor.theme:      aDMZ
+Xcursor.size:       16
+Xcursor.theme_core: 1
+
+!!  dmenu options
+dmenu.font:           Hermit-8,Symbola-8
+dmenu.foreground:     #d9d9d9
+dmenu.background:     #000000
+dmenu.selforeground:  #3399bb
+dmenu.selbackground:  #000000
+
+!!  dzen2 options
+dzen2.font:         Dejavu Sans Mono:size=8
+dzen2.foreground:   #aaaaaa
+dzen2.background:   #000000
+
+
+!!**************************************
+!!  Xft options
+!!**************************************
+
+!!  Xft for MacbookPro Retina
+!Xft.dpi:          227
+!Xft.rgba:         none
+!Xft.antialias:    true
+!Xft.hinting:      true
+!Xft.hintstyle:    hintslight
+!Xft.autohint:     true
+!Xft.lcdfilter:    lcddefault
+
+!!  Xft for regular HD
+Xft.dpi:          96
+Xft.rgba:         rgb
+Xft.antialias:    true
+Xft.hinting:      true
+Xft.hintstyle:    hintslight
+Xft.autohint:     true
+Xft.lcdfilter:    lcddefault
+
+
+!!**************************************
+!!  rofi options
+!!**************************************
+
+!!  
+rofi.font:            Hermit 14
+rofi.forebackground:  #ffffff
+rofi.background:      #000000
+
+!!  
+rofi.color-enabled:false
+rofi.opacity:80
+rofi.width:40
+rofi.lines:5
+rofi.columns:1
+
+!!  colours
+rofi.fg:#ffffff
+rofi.bg:#000000
+
+
+!!**************************************
+!!  urxvt options
+!!**************************************
+
+!!  Fonts
+URxvt.font: -artwiz-edges-medium-r-normal--12-*-75-75-m-0-iso8859-1
+!URxvt*font: xft:Hermit:style=medium:pixelsize=14:antialias=true
+!URxvt*blodFont: xft:Hermit:style=medium:pixelsize=14:antialias=true
+
+!!
+URxvt*borderless:1
+URxvt*scrollBar:false
+URxvt*scrollBar_right:false
+URxvt*saveLines:5000
+URxvt*tintColor:grey
+URxvt*shading:40
+URxvt*termName:rxvt-256color
+URxvt.letterSpace:0.2
+URxvt.lineSpace:3
+URxvt*cursorBlink:false
+URxvt*cursorUnderline:true
+URxvt*cursorColor:#26cece
+URxvt.internalBorder:10
+
+!!  
+!URxvt.url-launcher: /usr/bin/google-chrome-stable
+
+!!  perl extensions
+!URxvt.perl-ext-common:none
+!!Matcher
+!URxvt.matcher.button: 1
+
+
+!!  colours (other colours are from global definitions)
+URxvt*background: rgba:0000/0000/0200/c800
+URxvt*foreground: [100]#ffffff
+URxvt.background: #000000
+URxvt.foreground: #999999
+
+!!Required for native transparency;Removed for problems w/ranger
+!URxvt*depth:32
+
+
+!!**************************************
+!!  ftjerm options
+!!**************************************
+
+!!  general interface
+ftjerm*key:         Grave
+ftjerm*mod:         alt
+ftjerm*autohide:    false
+ftjerm*font:        Hermit 14px
+ftjerm*allowbold:   true
+ftjerm*border:      1
+ftjerm*opacity:     100%
+ftjerm*shell:       /usr/bin/zsh
+
+!!  positioning
+ftjerm*width:       100%
+ftjerm*height:      90%
+ftjerm*position:    top
+ftjerm*scroll:      true
+ftjerm*scrollbar:   none
+ftjerm*lines:       0
+ftjerm*fixedX:      0
+ftjerm*fixedY:      0
+
+!!  tabs
+ftjerm*showtab:         one
+ftjerm*tabpos:          bottom
+ftjerm*tablabel:        term
+ftjerm*tabfill:         false
+ftjerm*showonstart:     false
+ftjerm*allowreorder:    true
+
+!!  cursor
+ftjerm*cursorblink:     on
+ftjerm*cursorshape:     block
+ftjerm*mouseautohide:   true
+
+!!  colours
+ftjerm*background:  #000000
+ftjerm*foreground:  #aaaaaa
+!ftjerm*color0:      #242424
+!ftjerm*color8:      #474747
+!ftjerm*color1:      #8a2f58
+!ftjerm*color9:      #cf4f88
+!ftjerm*color2:      #287373
+!ftjerm*color10:     #53a6a6
+!ftjerm*color3:      #914e89
+!ftjerm*color11:     #bf85cc
+!ftjerm*color4:      #395573
+!ftjerm*color12:     #4779b3
+!ftjerm*color5:      #5e468c
+!ftjerm*color13:     #7f62b3
+!ftjerm*color6:      #2b7694
+!ftjerm*color14:     #47959e
+!ftjerm*color7:      #899ca1
+!ftjerm*color15:     #c0c0c0
+
+

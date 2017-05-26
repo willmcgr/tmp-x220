@@ -1,0 +1,158 @@
+
+
+o xinitrc
+  - finish adding startups for user
+  - finish adding startups for root
+  - clean up
+  + dbl chk
+
+o zshenv
+  + dbl chk
+
+* zsh
+  o zshrc
+    - aliases
+    - functions
+    + dbl chk
+  o zprofile
+    + dbl chk
+  o zsh_prompt_will
+    - much work
+    + dbl chk
+
+* config
+  * dunst
+    - clean up
+    + dbl chk
+  * fish
+    - clean up
+    + dbl chk
+  * qutebrowser
+    - clean up
+    + dbl chk
+  * ranger
+    - clean up
+    + dbl chk
+  * uzbl
+    - clean up
+    + dbl chk
+  * zathura
+    - clean up
+    + dbl chk
+  * termite
+    o config
+      - clean up
+      + dbl chk
+  * tranny
+    o settings.json 
+      - create, and keep (gets auto formatted on startup so no point in commenting)
+      + dbl chk
+    o features.note
+      - create, and keep (put desc of options here)
+      + dbl chk
+
+o vimrc
+  - clean up
+  + dbl chk
+
+* vim
+  * syntax
+    o tmux.vim
+      - clean up
+      + dbl chk
+    o fish.vim
+      - clean up
+      + dbl chk
+    o i3.vim
+      - clean up
+      + dbl chk
+    o i3blk.vim
+      - clean up
+      + dbl chk
+    o note.vim
+      - clean up
+      + dbl chk
+    o rtor.vim
+      - clean up
+      + dbl chk
+    o tex.vim
+      - clean up
+      + dbl chk
+  * colors
+    o nameless.vim
+      - clean up
+      + dbl chk
+  * spell
+    o en_simple.spl
+      - create, and keep.
+      + dbl chk
+
+o Xresources
+  - add all used x11 prgms
+  - clean up
+  + dbl chk
+
+o Xmodmap
+  - modify key substitutions
+  - clean up
+  + dbl chk
+
+o nanorc
+  - clean up
+  + dbl chk
+
+o compton.conf
+  - update for termite
+  - clean up
+  + dbl chk
+
+* i3
+  o config
+    - clean up
+    + dbl chk
+  o blocks.config
+    - clean up
+    + dbl chk
+  * blocks
+    o *all of them*
+      - clean up
+      + dbl chk
+
+* mpd
+  o mpd.conf
+    - clean up
+    + dbl chk
+  * playlists
+    + dbl chk
+
+* ncmpcpp
+  o config
+    - clean up
+    + dbl chk
+
+o gtkrc-2.0
+  - clean up
+  + dbl chk
+
+o gitconfig
+  - clean up
+  + dbl chk
+
+o fbtermrc
+  - clean up
+  + dbl chk
+
+o dircolors
+  - clean up
+  + dbl chk
+
+o tmux.conf
+  - fix navigation issues
+  - clean up
+  + dbl chk
+
+
+
+
+
+
